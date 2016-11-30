@@ -1,5 +1,5 @@
 "use strict"
-var db=require("./config/db.js"),easyMongo=db.easyMongo,userDetails=require("./config/userDetails.js"),name=userDetails.local.email.slice(0,userDetails.local.email.indexOf("@")),id=userDetails.local.id
+var db=require("./config/dbmin.js"),easyMongo=db.easyMongo,userDetails=require("./config/userDetails.js"),name=userDetails.local.email.slice(0,userDetails.local.email.indexOf("@")),id=userDetails.local.id
 module.exports=function(e,s){function i(e,s,i){e.isAuthenticated()?i():s.redirect("/")}function n(e){var s=[],i={}
 for(var n in e)s.push(e[n]),i[e[n]]=0
 var a=userDetails.generateHash(s[0]),o=userDetails.local.email.slice(0,userDetails.local.email.indexOf("@")),t=userDetails.local.id

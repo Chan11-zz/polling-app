@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style/dashboardmin.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+<div class="container-fluid">
+    <h1 id="title">Polling App</h1>
+    <div id="userArea">
+        <!--         -->
+    </div>
+    <div id="mainArea">
+        <div align="center" id="ques">
+             <form action="https://polling-app-chan.herokuapp.com/dashboard" method="post">
+            <h1>New Poll</h1>
+            <div><input type="text" id="pollques" name="pollques" placeholder="Enter Your Poll"></div>
+            <h2>Answers</h2>
+            <div><input type="text" id="ans1" name="ans1" placeholder="Answers"></div>
+            <div id="lastAnswerDiv"><input type="text" id="ans2" name="ans2" placeholder="Answers"></div>
+            <button id="submitButton" class="btn btn-lg">Submit</button>
+            <div><input id="addButton" type="button" value="+Add More" class="btn btn-lg"></div>
+    </form>
+            </div>
+    </div>
+    <div class="footer text-center">desinged & coded by <a href="http://codepen.io/Chan11/" target="_blank"><strong>Chandrahas</strong></a></div>
+    </div>
+    </div>
+
+<script src="./dashboard.js"></script><!--No dashboard min -->
+</body>
+</html>

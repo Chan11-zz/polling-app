@@ -1,0 +1,51 @@
+<!-- views/signup.ejs -->
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll Result</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/pollresultsmin.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js" ></script>
+
+</head>
+<body>
+<div class="main container-fluid">
+    <div class="row container-fluid">
+        <div id="left" class='col-xs-6'>
+            <div  align="center" >
+            <div id="menuButtons">
+                <a href="https://polling-app-kjtvxbawxuljqtke.c9users.io/main"><button id="homeButton">Home</button></a>
+                <a href="https://polling-app-kjtvxbawxuljqtke.c9users.io/profile"><button id="profileButton">profile</button></a>
+                <a href="https://polling-app-kjtvxbawxuljqtke.c9users.io/dashboard"><button id="dashButton">Dashboard</button></a>
+            </div>
+            <div id="questionUrl" data-url=<%= url %>>
+                <h1>Poll Question</h1>
+                <h1 id="question"></h1>
+                <!-- -->
+
+                       <form id="bt" action="https://polling-app-chan.herokuapp.com/postpollquestions" method="post">
+                           <div class="row" id="formGroup">
+                           </div>
+                           <input id="resetButton" type="submit" value="Submit">
+                       </form>
+
+                    <!-- -->
+
+                    <!-- -->
+            </div>
+            </div>
+             <div class="footer text-center">desinged & coded by <a href="http://codepen.io/Chan11/" target="_blank"><strong>Chandrahas</strong></a></div>
+        </div>
+        <div class="col-xs-6">
+            <div id="chartUrl" align="center">
+            <h3>Result</h3>
+            <canvas id="myChart" width="300" height="300"></canvas>
+            </div>
+        </div>
+    </div>
+    </div>
+<script src="./pollresultsmin.js"></script>
+</body>
+</html>

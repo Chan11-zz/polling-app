@@ -1,0 +1,36 @@
+<!-- views/signup.ejs -->
+<!doctype html>
+<html>
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+    <link rel="stylesheet" href="./style/profilemin.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div id="leftDiv" class="col-xs-4">
+            <div id="menuButtons">
+                <a href="https://polling-app-chan.herokuapp.com/logout"><button id="logoutButton">Logout</button></a>
+                <a href="https://polling-app-chan.herokuapp.com/main"><button id="homeButton">Home</button></a>
+                <a href="https://polling-app-chan.herokuapp.com/profile"><button id="profileButton">profile</button></a>
+                <a href="https://polling-app-chan.herokuapp.com/dashboard"><button id="dashButton">Dashboard</button></a>
+            </div>
+            <h3 id="numberOfQuestions"></h3>
+        </div>
+        <div id="rightDiv" class="col-xs-8">
+            <h1 id="pageTitle"><%= name %> Profile</h1>
+            <h3>My Questions</h3>
+            <ol id="ol" align="center" start="1">
+
+            </ol>
+        </div>
+    </div>
+     <div class="footer text-center">desinged & coded by <a href="http://codepen.io/Chan11/" target="_blank"><strong>Chandrahas</strong></a></div>
+    </div>
+<script src="./profilemin.js"></script>
+</body>
+</html>

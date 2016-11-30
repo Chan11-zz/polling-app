@@ -1,0 +1,59 @@
+<!-- views/index.ejs -->
+<!doctype html>
+<html>
+<head>
+    <title>Polling App by Chandrahas</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <style>
+    body {
+            padding-top:80px;
+           text-align: center;
+            font-family: Verdana;
+            font-size: 11px;
+            line-height: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+        span{
+            border:0;
+            padding:10%;
+        }
+        #login{
+            background-color:#2980b9;
+        }
+        #signup{
+            background-color:#c0392b;
+        }
+        #login,#signup{
+             color:white;
+        }
+        #title{
+            margin-top:3%;
+            font-size:100px;
+        }
+        .footer {
+          position: relative;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          margin-top:10%;
+       }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+
+     <h1 id="title">Polling App</h1>
+
+        <p>Login or Register:</p>
+
+        <a href="/login " id="login" class="btn btn-default"><span class="fa fa-user"></span> Login</a>
+        <a href="/signup" id="signup" class="btn btn-default"><span class="fa fa-user"></span> Signup</a>
+
+<div class="footer text-center">desinged & coded by <a href="http://codepen.io/Chan11/" target="_blank"><strong>Chandrahas</strong></a></div>
+    </div>
+</div>
+</body>
+</html>

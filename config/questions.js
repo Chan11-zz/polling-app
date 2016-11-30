@@ -1,4 +1,4 @@
-var db=require('./db.js');
+var db=require('./dbmin.js');
 var easyMongo = db.easyMongo;
 var questions=Object.create(null);
 var loaded = false;

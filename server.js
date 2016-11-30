@@ -4,7 +4,7 @@ var app=express();
 var path=require('path');
 app.set('view engine', 'ejs'); // set up ejs for templating
 app.set('views', path.join(__dirname, 'views'));
-app.set('port',process.env.PORT||8080);
+app.set('port',process.env.PORT);
 
 var bodyParser=require('body-parser');
 var cookieParser=require('cookie-parser');

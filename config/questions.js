@@ -7,20 +7,18 @@ if(!loaded){
   (function(){
     easyMongo(db.findDocToArray,"questions",{})
          .then(function(result){
-           //question=
-           console.log(result,"from questions");
            questions.prototype.result=result;
            loaded=true;
-         }); 
-    })();   
+         });
+    })();
 }
-    
-    
+
+
 module.exports=questions;
-    
 
-   
 
-        
-         
+
+
+
+
 //module.exports=questions;
